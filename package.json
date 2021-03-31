@@ -15,7 +15,11 @@
   "author": "Paga",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.21.1",
+=======
+    "axios": "^0.20.0",
+>>>>>>> 8823f412664fdcc12c45a4aa8f02033d4053d8eb
     "js-sha512": "^0.8.0",
     "unirest": "^0.6.0"
   },
