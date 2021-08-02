@@ -1,4 +1,4 @@
-# PagaBusiness Nodejs API Library v2.0.0
+# PagaBusiness Nodejs API Library v2.0.1
 
 ## Business Services exposed by the library
 
@@ -28,7 +28,7 @@ For more information on the services listed above, visit the [Paga DEV website](
 
 `npm install paga-business`
 
-`For paga-business version = 2.0.0`
+`For paga-business version = 2.0.1`
 
 ```bash
 const PagaBusinessClient = require('paga-business')
