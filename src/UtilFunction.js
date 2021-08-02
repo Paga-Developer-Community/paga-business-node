@@ -1,7 +1,6 @@
 const crypto = require('crypto');
 const unirest = require('unirest');
 const fetch = require("node-fetch");
-const axios = require('axios').default;
 
 class UtilFunction {
     constructor(build) {
