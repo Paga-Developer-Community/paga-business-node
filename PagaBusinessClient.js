@@ -1,4 +1,4 @@
-const PagaBusiness = require("./PagaBusiness");
+const PagaBusiness = require("./src/PagaBusiness");
 
 class PagaBusinessClient {
     constructor() {
