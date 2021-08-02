@@ -1,5 +1,5 @@
 const UtilFunction = require("./UtilFunction");
-const Builder = require("./PagaBusinessClient");
+const Builder = require("../PagaBusinessClient");
 
 const requestType = {
     FORM_DATA: "formData"

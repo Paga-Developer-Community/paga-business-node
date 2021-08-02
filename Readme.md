@@ -1,4 +1,4 @@
-# PagaBusiness Nodejs API Library v2.0.2
+# PagaBusiness Nodejs API Library v2.0.3
 
 ## Business Services exposed by the library
 
