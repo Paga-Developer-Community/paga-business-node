@@ -363,7 +363,7 @@ class PagaBusiness extends UtilFunction {
     /**
      * @param   {string}    referenceNumber                     A unique reference number provided by the business, identifying the transaction. This reference number will be preserved on the Paga platform to reconcile the operation across systems and will be returned in the response.
      * @param   {number}    amount                              The amount of money to deposit to the destination bank and bank account provided. Your Paga account must contain sufficient funds to cover this amount plus any fees.
-     * @param   {number}    currency                            The currency of the operation, if being executed in a foreign currency. The currency must be one of the currencies supported by the platform. For supported currencies, check with Paga integration operations support.
+     * @param   {string}    currency                            The currency of the operation, if being executed in a foreign currency. The currency must be one of the currencies supported by the platform. For supported currencies, check with Paga integration operations support.
      * @param   {string}    destinationBankUUID                 The Paga bank UUID identifying the bank to which the deposit will be made. In order to get the list of supported banks and bank UUIDs, execute the getBanks operation defined in this document. Bank codes will not change though additional banks may be added to the list in the future.
      * @param   {string}    destinationBankAccountNumber        The ten digit NUBAN bank account number for the account to which the deposit will be made. This number should be a valid account number for the destination bank as specified by the destinationBankCode parameter above. Executing operation will validate this number and if valid, return the account holder name as stored at the bank for this account.
      * @param   {string}    recipientPhoneNumber                The mobile phone number of the recipient of the deposit to bank transaction. Either one or both of this parameter and the recipientEmail parameter must be provided. If this parameter is provided, this operation will validate that it is a valid phone number.
@@ -407,7 +407,7 @@ class PagaBusiness extends UtilFunction {
                 locale
             };
 
-            const hashParams = `${referenceNumber}${amount}${destinationBankUUID}${destinationBankAccountNumber} `;
+            const hashParams = `${referenceNumber}${amount}${destinationBankUUID}${destinationBankAccountNumber}`;
             const header = this.buildHeader(hashParams);
             const response = await this.postRequest(header, data, this.getBaseUrl("validateDepositToBank"));
             return this.checkError(response);
