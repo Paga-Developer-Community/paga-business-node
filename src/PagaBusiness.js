@@ -247,7 +247,7 @@ class PagaBusiness extends UtilFunction {
      * @param   {number}    amount                      The amount of airtime to purchase.
      * @param   {number}    currency                    The currency of the operation, if being executed in a foreign currency.
      * @param   {string}    destinationPhoneNumber      The phone number for which airtime is being purchased. If null, and ­­­­Principal is specified, then the airtime will be purchased for the phone number of the purchaserPrincipal. Must be provided if the purchaserPrincipal is null.
-     * @param   {Boolean}   isDataBundle                Default is False but signify as false to purchase data
+     * @param   {Boolean}   isDataBundle                Default is False but signify as True to purchase data
      * @param   {string}    mobileOperatorServiceId     For Data purchase parse the value of mobileOperatorServiceId to indicate the preferred data package
      * @param   {string}    mobileOperatorPublicId      Parse the mobile operator public ID - not compulsory 
      * @param   {string}    purchaserPrincipal          The authentication principal for the user purchasing airtime if the airtime is being purchased on behalf of a user. If null, the airtime will be processed from the 3rd parties own account.
